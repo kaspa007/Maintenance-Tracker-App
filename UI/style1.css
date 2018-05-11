@@ -1,0 +1,155 @@
+body {
+	/*background-image: url('Backround-home2.jpg');*/
+}
+
+.page-bucket {
+	/*-image: url('Backround-home2.jpg'); */
+	background-color: #cccccc;
+	height:100%; 
+    width:100%;
+}
+
+.header {
+	background-color: black;
+	width: 100%;
+	font-size:10px;
+	padding:2px;
+}
+
+span {
+	font-family: verdana;
+	color: white;
+}
+
+.nav {
+  background: #808000;
+  width: 100%;
+  bottom-margin: 0px;
+}
+
+#nav ul {
+  display: inline-flex;
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav ul li a {
+  width: 100%;
+  display: block;
+  padding: .8em;
+  background: #808000;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid #34495e;
+  font-size: .9em;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  border-right: 10px;
+  border-left:2px;
+}
+
+#nav ul li a:hover {
+  background: #ffff33;
+}
+#nav ul li:last-of-type a {
+  border-right: 0px;
+}
+
+/*Page content section*/
+
+.page-content-section {
+    margin-left: 30px;
+    margin-top: 0px;
+    display: flex;
+}
+
+.welcome-box  {
+  background-color: yellow;
+  width: 50%;
+  float: left;
+  margin-right: 200px;
+  margin-left: 50px;
+  width: 600px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.form-holder {
+   border-right: 5px solid #ffffe6;
+   border-left: 5px solid #ffffe6;
+   border-bottom: 5px solid #ffffe6;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 30px;
+    background-color: #808000;
+    padding: 30px;
+    height: 400px;
+    width: 25%;
+    float: left;
+}
+
+.signin-form {
+  height: 40%;
+  width: 100%;
+  text-align: left;
+  background-color: #808000;
+  }
+
+ input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-content: center;
+
+}
+
+  .button {
+    background-color: #ffffb3;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.inline-content {
+	display: inline;
+}
+
+input[type=submit] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.page-footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  float: bottom;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  margin-top:20px;
+  margin-bottom:0px;
+  padding-top:4px;
+  padding-bottom: 10px;
+}
