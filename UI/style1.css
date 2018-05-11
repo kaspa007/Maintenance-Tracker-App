@@ -3,7 +3,8 @@ body {
 }
 
 .page-bucket {
-	background-image: url('Backround-home2.jpg');
+	/*-image: url('Backround-home2.jpg'); */
+	background-color: #cccccc;
 	height:100%; 
     width:100%;
 }

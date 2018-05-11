@@ -1,0 +1,74 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    /*font-size: 25px;*/
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    display: 60%;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+#request-list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #a6a6a6;
+    color: white;
+}
+
+.admin-page-info {
+	display: flex;
+}
+
+.a {
+	float: center;
+	align-self: center;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-holder{
+	justify-content: center;
+	margin-left:100px;
+	/*display: 60%;*/
+}
+
+#request-list td, #request-list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#request-list tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .page-bucket{}
+}
