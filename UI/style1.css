@@ -1,4 +1,5 @@
 body {
+
 	/*background-image: url('Backround-home2.jpg');*/
 }
 
@@ -42,8 +43,8 @@ span {
   background: #808000;
   color: white;
   text-decoration: none;
-  border-right: 1px solid #34495e;
-  font-size: .9em;
+  border-right: 0px solid #34495e;
+ 
 }
 
 li {
@@ -152,4 +153,50 @@ input[type=submit] {
   margin-bottom:0px;
   padding-top:4px;
   padding-bottom: 10px;
+}
+
+/* Sign up page style */
+
+form h5 {
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-top: 0px;
+  padding-top: 0px;
+    border: 0 solid #e7e7e7;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.text-center {
+  text-align: center;
+}
+.create-form-holder {
+  margin: 40px auto;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 50px;
+  background-color: #808000;
+  height: 100%;
+}
+
+.form-item {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-input {
+  padding:8px;
+  width: 100%;
+}
+
+#needed form div textarea[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-content: center;
 }
