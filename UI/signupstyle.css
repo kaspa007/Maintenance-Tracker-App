@@ -31,7 +31,7 @@ form h5 {
 	width: 100%;
 }
 
-/*#needed form div input[type=text] {
+#needed form div textarea[type=text] {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -41,4 +41,3 @@ form h5 {
     box-sizing: border-box;
     align-content: center;
 }
-*/
