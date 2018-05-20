@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 
 app.use(expressValidator());
 
+// global.IdGen = ;
+
 app.use('/api/v1', routes);
 
 app.get('/', (req, res) => res.status(200).send({
