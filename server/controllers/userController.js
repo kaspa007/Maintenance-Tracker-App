@@ -22,8 +22,11 @@ class Users {
             error: true
         })
     }
-
-  
+    static AllUsers(req, res) {
+        return res.status(200).json({
+            users
+        })
+    }
     static UserSignUp(req, res) {
         const { name, password, email } = req.body;
         users.push ({
