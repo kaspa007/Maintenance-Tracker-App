@@ -12,5 +12,6 @@ const { AllUsers } = Users;
 router.post('/users/signin', loginValidator, UserSignIn);
 router.post('/users/signup', UserSignUp);
 router.get('/users', AllUsers);
+// router.get('/users/requests'UserAllRequest)
 
 export default router;
