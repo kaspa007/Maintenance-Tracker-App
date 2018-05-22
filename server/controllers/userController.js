@@ -1,12 +1,17 @@
 import users from '../models/users';
+import jwt from 'jsonwebtoken';
+
 
 class Users {
     static UserSignIn(req, res) {
         const { email, password } = req.body;
+
         for (let i = 0; i < users.length; i++) {
             if (email.toLowerCase() == users[i].email.toLowerCase() && password == users[i].password) {
+                const token = jwt.sign( { id: users[i].id}, "secret", { expiresIn: "1h" });
             return res.status(200).json({
                 message: 'Logged in successfully!',
+                token: token,
                 error: false
             });
             }
@@ -43,3 +48,4 @@ class Users {
     }
 }
 export default Users;
+

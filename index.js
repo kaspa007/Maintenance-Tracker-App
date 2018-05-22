@@ -3,11 +3,14 @@ import bodyParser from 'body-parser';
 import logger from 'morgan';
 import routes from './server/routes';
 import expressValidator from 'express-validator';
+import jwt from 'jsonwebtoken';
 
 const app = express();
 
 app.use(logger('dev'));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+
 
 app.use(expressValidator());
 
