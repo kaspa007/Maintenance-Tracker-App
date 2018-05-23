@@ -12,10 +12,14 @@ const { UserSignUp } = Users;
 const { AllUsers } = Users;
 const { userAuth } = Authenticator;
 const { UserAllRequest } = Requests;
+const { UserSingleRequest } = Requests;
 
 router.post('/users/signin', loginValidator, UserSignIn);
 router.post('/users/signup', UserSignUp);
 router.get('/users', AllUsers);
-router.get('/users/requests', userAuth, UserAllRequest)
+
+router.get('/users/requests', userAuth, UserAllRequest);
+router.get('/users/requests/:requestId', userAuth, UserSingleRequest);
+// router.get( '/users/requests/:requestId', userAuth, UserSingleRequest)
 
 export default router;
