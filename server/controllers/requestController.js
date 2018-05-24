@@ -1,5 +1,5 @@
 import users from '../models/users';
-import requests from '../models/requests';
+import  requests from '../models/requests';
 import jwt from 'jsonwebtoken';
 
 export class Requests{
@@ -60,5 +60,28 @@ export class Requests{
         });
 
     }
+    static CreateRequest (req, res){
+        const token = req.headers['x-access-token'];
+        const contin = (requests.length) - 1;
+        const { subject, requestType, requestDetails } = req.body;
+        const decoded = (jwt.verify( token, "secret" )).id;
+        
+        requests.push ({
+            id: decoded,
+            subject,
+            requestId : (requests[contin].requestId) + 1, 
+            requestType, 
+            requestDetails
+        });
+        console.log('---------------------',requests)
+        // IdGen += 1;
+        return res.status(200).json({
+            message: 'Request submitted succesfully!',
+            error: false
+        });
+    }
 }
+
+    
+
 export default Requests;
