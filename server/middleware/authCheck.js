@@ -13,7 +13,18 @@ class Authenticator {
             }
            next();
         }
+    
     }
+    static reqAuth ( req, res, next) {
+        const { subject, requestType, requestDetails } = req.body;
+
+       if (!( subject.trim() || requestType.trim() || requestDetails.trim())) {
+        return res.status(400).json({
+            error: "Please fill in all details"
+       })
+    }
+    next();
+}
 }
 
 export default Authenticator;
