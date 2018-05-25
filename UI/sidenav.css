@@ -79,15 +79,37 @@ table {
     margin: 0 auto 0 auto;
   float: right;
   width: 70vw;
-    /* margin-left: 200px; Same as the width of the sidenav */
+    margin-left: 200px; /*Same as the width of the sidenav */
     /*font-size: 28px; /* Increased text to enable scrolling */
-    /* padding: 0px 10px;
+    padding: 0px 10px;
     display: 60%;
     float: right;
     display: flex;
-    justify-content: center; */
+    justify-content: center;
+    /* display: flex;*/
+    float: right;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(-50%, -50%);
+}
+
+.mainholder {
+    margin: 0 auto 0 auto;
+  /* float: right; */
+  width: 70vw;
+    margin-left: 200px; /*Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    /* padding: 0px 10px;
+    display: 60%; */
+    /* float: right; */
     /* display: flex;
-    float: right;*/
+    justify-content: center; */
+    /* display: flex;*/
+    /* float: right; */
     
     /* position: fixed;
     top: 50%;
@@ -97,16 +119,21 @@ table {
     transform: translate(-50%, -50%); */
 }
 
+
 .table-holder{
-float: right;
-/* margin-right: 100px; */
+/* float: right; */
+/* margin-left: 300px; */
 /* width: 50vw; */
-  /* position: fixed;
-  top: 50%;
+  /* position: fixed;*/
+top: 200px;
+left: 300px;
+margin: 50px auto;
+  /* top: 80px; */
+  /* top: 50%;
   left: 50%;
   margin-top: -50px;
   margin-left: -100px;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);  */
 }
 
 #request-list th {
@@ -131,11 +158,12 @@ float: right;
     text-align: center;
 }
 
-/* .table-holder{
+.table-holder{
 	justify-content: center;
-	margin-left:400px;
+    margin-left:250px;
+    margin-top: 200px; 
 	display: 60%;
-} */
+}
 
 #request-list td, #request-list th {
     border: 1px solid #ddd;
@@ -145,9 +173,9 @@ float: right;
 #request-list tr:nth-child(even){
 	background-color: #f2f2f2;
 }
-
+/* 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     .page-bucket{}
-}
+} */
