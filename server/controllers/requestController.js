@@ -55,17 +55,13 @@ export class Requests{
     }
 
     static CreateRequest (req, res){
-        const token = req.headers['x-access-token'];
-        const contin = (requests.length) - 1;
-        const { subject, requestType, requestDetails } = req.body;
-        const decoded = (jwt.verify( token, "secret" )).id;
         
         requests.push ({
-            id: decoded,
-            subject,
-            requestId : (requests[contin].requestId) + 1, 
-            requestType, 
-            requestDetails
+            id: (jwt.verify( req.headers['x-access-token'], "secret" )).id,
+            subject: req.body.subject,
+            requestId : (requests[(requets.length)- 1].requestId) + 1, 
+            requestType: req.body.requestType, 
+            requestDetails: req.body.requestDetails
         });
         return res.status(200).json({
             message: 'Request submitted succesfully!',
