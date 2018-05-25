@@ -11,11 +11,9 @@ export class Requests{
         console.log(decoded);
         const Reqlist = requests.filter(function (request) {
             return request.id === decoded;
-
           });
         
           console.log(Reqlist);
-
 
         if (Reqlist.length <= 1) {
             return res.status(404).json({
@@ -35,10 +33,6 @@ export class Requests{
         const decoded = (jwt.verify( token, "secret").id);
         console.log(decoded);
 
-        // const Reqlist = requests.filter(function (request) {
-        //     return request.id === decoded ;
-
-        //   });
         const { requestId } = req.params;
         console.log(requestId);
 
@@ -58,8 +52,8 @@ export class Requests{
             message: 'Sorry, request not found!',
             error: true
         });
-
     }
+
     static CreateRequest (req, res){
         const token = req.headers['x-access-token'];
         const contin = (requests.length) - 1;
@@ -73,15 +67,10 @@ export class Requests{
             requestType, 
             requestDetails
         });
-        console.log('---------------------',requests)
-        // IdGen += 1;
         return res.status(200).json({
             message: 'Request submitted succesfully!',
             error: false
         });
     }
 }
-
-    
-
 export default Requests;
