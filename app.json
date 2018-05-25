@@ -1,0 +1,6 @@
+{
+    "name": "Node.js Getting Started",
+    "description": "A Node.js app using express",
+    "repository": "https://github.com/AdedayoOpeyemi/Maintenance-Tracker-App",
+    "keywords": ["node", "express", "static" ]
+}
