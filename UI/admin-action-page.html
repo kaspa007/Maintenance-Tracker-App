@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="indexstyle.css">
   <link rel="stylesheet" href="sidenav.css">
+  <link rel="stylesheet" href="signupstyle.css">
   
   <link rel="stylesheet" href="style1.css">
 </head>
@@ -16,7 +17,7 @@
 		</div>
 
 
-		<div class="nav">
+		<!-- <div class="nav">
 			<nav role="navigation" id="nav">
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -25,7 +26,8 @@
 					<li><a href="#">Contact Us</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div> -->
+		<div class="page-content-section">
 
 		<div class="admin-page-info">
 			<div class="sidenav">
@@ -36,15 +38,15 @@
 			</div>
 
 			<div class="main">
-				<div class="create-form-holder card" id='needed' style="width: 800px">
+				<div class="create-form-holder card" id='needed'>
 					<p>Request details</p>
 					<form class="signin-form" style="width: 400px"><br>
 
-						<label>Date:</label><br>
-						<label>Request ID:</label><br>
-						<label>Name of requester:</label><br>
-						<label>Subject:</label><br>
-						<label>Details:</label><br>
+						<p>Date:</p><br>
+						<p>Request ID:</p><br>
+						<p>Name of requester:</p><br>
+						<p>Subject:</p><br>
+						<p>Details:</p><br>
 						<textarea rows="8" cols="50" required></textarea><br>
 						<label>Add note: </label><br>
 						<textarea rows="5" cols="30" required></textarea><br>
@@ -53,7 +55,7 @@
 						<select>
 							<option value="approve">Approve</option>
 							<option value="reject">Reject</option>
-							<option value="pending">Pendng</option>
+							<option value="resolve">Resolve</option>
 						</select> <br>
 						<div class="form-item">
 							<input class="button" type="submit" value="Submit">
@@ -65,10 +67,12 @@
 			</div>
 		</div>
 
+	
 	</div>
 
 	<div class="page-footer">
 			<p>(c) Opeyemi <p>
+		</div>
 		</div>
 </body>
 </html>
