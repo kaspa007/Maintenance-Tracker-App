@@ -1,20 +1,91 @@
-body {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-	/*background-image: url('Backround-home2.jpg');*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.backpict {
+  /* background-image: url('Backround-home2.jpg'); */
+  background-image: url('tools.jpg');
+  width: 100vw;
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+body {
+  /*background-image: url('Backround-home2.jpg');*/
+  min-height: 100;
+  background-color: #FFFFFF;
+  background-size: auto;
 }
 
 .page-bucket {
-	/*-image: url('Backround-home2.jpg'); */
-	background-color: #cccccc;
+  
+  background-size: contain;
+	/*background-color: #cccccc;*/
 	height:100%; 
-    width:100%;
+  width:100%;
 }
 
 .header {
-	background-color: black;
-	width: 100%;
+	background-color: #1AAAA0;
+	width: 100vw;
 	font-size:10px;
-	padding:2px;
+  /* padding:2px; */
+  padding-bottom:10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 8px;
+  font-weight: 800;
 }
 
 span {
@@ -22,87 +93,84 @@ span {
 	color: white;
 }
 
-.nav {
-  background: #808000;
-  width: 100%;
-  bottom-margin: 0px;
-}
-
-#nav ul {
-  display: inline-flex;
-  width: 100%;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-#nav ul li a {
-  width: 100%;
-  display: block;
-  padding: .8em;
-  background: #808000;
-  color: white;
-  text-decoration: none;
-  border-right: 0px solid #34495e;
- 
-}
-
-li {
-  font-family: sans-serif;
-  font-size: 1.5em;
-  border-right: 10px;
-  border-left:2px;
-}
-
-#nav ul li a:hover {
-  background: #ffff33;
-}
-#nav ul li:last-of-type a {
-  border-right: 0px;
-}
-
 /*Page content section*/
 
 .page-content-section {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-top: 0px;
     display: flex;
+    height: 
 }
 
 .welcome-box  {
-  background-color: yellow;
-  width: 50%;
+  line-height: 100px;
+  background-color: #FFFFFF;
+  opacity: 0.5;
   float: left;
-  margin-right: 200px;
-  margin-left: 50px;
-  width: 600px;
+  /* margin-right: 200px;
+  margin-left: 50px; */
+  width: 30%;
   height: 250px;
-  margin-top: 20px;
+  /* margin-top: 100px; */
+  display: table;
+  padding: 40px;
+  border-radius: 40px;
+  position :absolute;
+  left: 100px;
+  top: 80px;
 }
 
+.welcome-box h3 {
+  font-size: 40px;
+  line-height: 24px
+}
+.welcome-box p {
+  font-size: 24px;
+  line-height: 24px
+}
+
+
 .form-holder {
-   border-right: 5px solid #ffffe6;
-   border-left: 5px solid #ffffe6;
-   border-bottom: 5px solid #ffffe6;
-    margin-left: 30px;
-    margin-top: 0px;
-    margin-right: 30px;
-    background-color: #808000;
-    padding: 30px;
-    height: 400px;
-    width: 25%;
-    float: left;
+  border: 5px solid #ffffe6;
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-left: auto;
+    margin-right: auto;
+    /* width: 8em */
+  position :absolute;
+  right: 30px;
+  top: 80px;
+  background-color: #FF7A5A;
+  padding: 20px;
+  height: 400px;
+  width: 30%;
+  float: left;
 }
 
 .signin-form {
   height: 40%;
   width: 100%;
-  text-align: left;
-  background-color: #808000;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: auto;
+    margin-right: auto;
   }
 
- input[type=text] {
-    width: 80%;
+  .requestform {
+    height: 40%;
+    width: 75%;
+    /* text-align: center; */
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+      /* width: 8em; */
+    }
+  
+
+ select, input[type=text] {
+    width: 73%;
+    /* align: right; */
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -113,7 +181,8 @@ li {
 
 }
 
-  .button {
+  /* .button {
+    text-align: center;
     background-color: #ffffb3;
     border: none;
     color: black;
@@ -124,13 +193,15 @@ li {
     font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
-}
+} */
 
 .inline-content {
-	display: inline;
+  display: inline;
+  line-height: 20px;
 }
 
 input[type=submit] {
+    align:center;
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -139,64 +210,62 @@ input[type=submit] {
     border-radius: 4px;
     box-sizing: border-box;
     align-self: center;
+    background-color: #7D7A57;
 }
 
 .page-footer {
-  background-color: black;
+  background-color: #1AAAA0;
   text-align: center;
   color: white;
   float: bottom;
-  position: sticky;
+  position: absolute;
   bottom: 0px;
   width: 100%;
-  margin-top:20px;
+  /* margin-top:20px; */
   margin-bottom:0px;
   padding-top:4px;
   padding-bottom: 10px;
+  bottom : 0;
 }
 
-/* Sign up page style */
-
-form h5 {
-  margin-bottom: 30px;
-}
-
-.card {
-  margin-top: 0px;
-  padding-top: 0px;
-    border: 0 solid #e7e7e7;
-    border-radius: 5px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-.text-center {
+.page-footers {
+  background-color: #1AAAA0;
   text-align: center;
-}
-.create-form-holder {
-  margin: 40px auto;
-  min-width: 300px;
-  max-width: 450px;
-  padding: 50px;
-  background-color: #808000;
-  height: 100%;
-}
-
-.form-item {
-  margin-bottom: 20px;
+  color: white;
+  float: bottom;
+  position: absolute;
+  bottom: 0px;
   width: 100%;
+  /* margin-top:20px; */
+  margin-bottom:0px;
+  padding-top:4px;
+  padding-bottom: 10px;
+  bottom : 0;
 }
 
-.form-input {
-  padding:8px;
+.signup {
+  /* position: relative; */
+  background-color: #1AAAA0;
+  text-align: center;
+  color: white;
+  float: bottom;
+  /* position: absolute; */
+  bottom: 0px;
   width: 100%;
+  /* margin-top:20px; */
+  margin-bottom:0px;
+  padding-top:6px;
+  padding-bottom: 10px;
+  bottom : 0;
 }
 
-#needed form div textarea[type=text] {
-    width: 80%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    align-content: center;
+label {
+  font-style: verdana;
+  color: white;
+  font-size: 22px;
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
 }

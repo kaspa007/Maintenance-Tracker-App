@@ -1,0 +1,60 @@
+form h5 {
+	margin-bottom: 30px;
+}
+
+.card {
+	margin-top: 0px;
+	padding-top: 0px;
+	  border: 0 solid #e7e7e7;
+    border-radius: 5px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+	background-color: #FF7A5A;
+}
+.text-center {
+	text-align: center;
+	font-weight: 100;
+}
+.create-form-holder {
+	background-color: #FF7A5A;
+	border: 5px solid #ffffe6;
+   border-radius: 15px;
+	/* margin: 40px auto; */
+	/* float: center; */
+	/* margin-left: 30px;
+  margin-top: 0px; */
+  margin: 0 auto;
+  width: 40%;
+	min-width: 300px;
+	max-width: 500px;
+	padding: 50px;
+	/* background-color: #808000; */
+	height: 65vh;
+	position :absolute;
+	right: 30px;
+	top: 80px;
+}
+
+.form-item {
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: right;
+	
+}
+
+.form-input {
+	padding:8px;
+	width: 100%;
+}
+
+/* #needed form div textarea[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    align-content: center;
+} */
+
+

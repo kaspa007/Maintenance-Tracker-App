@@ -1,13 +1,65 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .sidenav {
     height: 100%;
-    width: 160px;
-    position: fixed;
+    width: 15vw;
+    /* position: fixed; */
     z-index: 1;
-    top: 120px;
+    top: 50px;
+    bottom: 40px;
     left: 0;
-    background-color: #111;
+    background-color: #FF7A5A;
     overflow-x: hidden;
     padding-top: 20px;
+    float: left;
+    margin-right: 200px;
 }
 
 .sidenav a {
@@ -16,6 +68,7 @@
     /*font-size: 25px;*/
     color: #818181;
     display: block;
+    
 }
 
 .sidenav a:hover {
@@ -23,16 +76,69 @@
 }
 
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
+    margin: 0 auto 0 auto;
+  float: right;
+  width: 70vw;
+    margin-left: 200px; /*Same as the width of the sidenav */
     /*font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
     display: 60%;
     float: right;
     display: flex;
     justify-content: center;
+    /* display: flex;*/
+    float: right;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(-50%, -50%);
+}
+
+.mainholder {
+    margin: 0 auto 0 auto;
+  /* float: right; */
+  width: 70vw;
+    margin-left: 200px; /*Same as the width of the sidenav */
+    /*font-size: 28px; /* Increased text to enable scrolling */
+    /* padding: 0px 10px;
+    display: 60%; */
+    /* float: right; */
+    /* display: flex;
+    justify-content: center; */
+    /* display: flex;*/
+    /* float: right; */
+    
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(-50%, -50%); */
+}
+
+
+.table-holder{
+/* float: right; */
+/* margin-left: 300px; */
+/* width: 50vw; */
+  /* position: fixed;*/
+top: 200px;
+left: 300px;
+margin: 50px auto;
+  /* top: 80px; */
+  /* top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  transform: translate(-50%, -50%);  */
 }
 
 #request-list th {
+    width:50%;
+    height:50%;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -45,7 +151,7 @@
 }
 
 .a {
-	float: center;
+	text-align: center;
 	align-self: center;
 	display: table-cell;
     vertical-align: middle;
@@ -54,8 +160,9 @@
 
 .table-holder{
 	justify-content: center;
-	margin-left:100px;
-	/*display: 60%;*/
+    margin-left:250px;
+    margin-top: 200px; 
+	display: 60%;
 }
 
 #request-list td, #request-list th {
@@ -66,9 +173,9 @@
 #request-list tr:nth-child(even){
 	background-color: #f2f2f2;
 }
-
+/* 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     .page-bucket{}
-}
+} */

@@ -6,46 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style1.css">
 </head>
-<body>
+<body class="backpict">
 	<div class="page-bucket">
 		<div class="header">
-			<h1 id="alt-logo"><span>Maintenance Tracker App<span></h1>
+			<h1 id="alt-logo"><span>Maintenance Tracker<span></h1>
 		</div>
 
-		<div class="nav">
+		<!-- <div class="nav">
 			<nav role="navigation" id="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Home</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Contact Us</a></li>
-					<li><a href="adminpage.html">Admin page</a></li>
-					<li><a href="userpage.html">User page</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div> -->
 
 		<div class="page-content-section">
 			<div class="welcome-box" >
-				<h3>Welcome to your reliable source for maintenance and repairs</h3>
+				<h3 class="Into">Welcome to your reliable source for maintenance and repairs</h3>
 
-				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				<p class="intro-notes">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+					    anim id est laborum."</p>
 				
 			</div>
 
 			<div class="form-holder">
 				<form class="signin-form">
-					<h4> Sign In</h4>
+					<h4><label> Sign In </label></h4>
+					<div class="form-item">
+					<label>Email:<label>
+						<input type="text" name="email" placeholder="Email" required><br>
+					</div>
+				    <div class="form-item">
+					<label>Password:<label> 
+						<input type="text" name="password" placeholder="password" required><br>
 
-					<label>Email:<label><br> 
-						<input type="text" name="email" placeholder="Email" required=""><br>
-					<label>Password:<label><br> 
-						<input type="text" name="password" placeholder="password" required=""><br>
+					</div>
+
 					<input type="submit" class="button" value="Submit"><br>
 
 					<div >
-						<br><p class="inline-content">Forgot Username / Password?</p>
-						<a class="txt2" href="#">
+						<p class="inline-content">Forgot Username / Password?</p>
+						<a href="#" >
 							Click here
 						</a>
 						
@@ -66,7 +70,7 @@
 		</div>
 
 		<div class="page-footer">
-			<p>(c) Opeyemi <p>
+			<p>&copy Opeyemi <p>
 		</div>
 	</div>
 
